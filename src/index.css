@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+	background-color: #78bede69/*#0078bb21*/;
+	font-family: sans-serif;
+	color: #fff;
+}
+
+.App {
+  display: block;
+  color: #f00;
+}
+
+body {
+	width: 50rem;
+	border: 2px solid #088;
+	margin: 1rem auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.player-card {
+	width: 10.5rem;
+	height: 10.5rem;
+	margin: 1.25rem;
+	border-radius: 50%;
+	background-color: #ddd;
+	text-align: center;
+	line-height: 12.5rem;
+	position: relative;
+	display: inline-block;
+	border: 2px solid #fff;
+	opacity: 1;
+	background-repeat:no-repeat;
+	background-position: center center;
+}
+
+.player-card:nth-child(2) {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
+
+button {
+	width: 25rem;
+	border: 2px solid #fff;
+	margin: 1.25rem auto;
+	cursor: pointer;
+	display: block;
+	outline: none;
+	padding: 1rem;
+}
+
+button:hover {
+	background-color: #0cc;
+	transition : all 200ms ease-out;
+}
+
+p {
+	text-align: center;
+	min-height: 3.75rem;
+}
+
+p, button {
+	font-size: 1.25rem;
+}
+
+a {
+  display: block;
+  font-weight: bold;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+
+/* Firefox old*/
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+.btn-group .player-card{
+	width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 25%;
+	background-size: 85%;
+	margin: 0.75rem 1.25rem;
+
+	-moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+	animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+	
+	
+}
+.btn-group .player-card:hover { 
+	cursor:pointer important!;
+	background-color: green important!;
+}
+.btn-group{
+	border: 1px solid white;
+	
+}
+.playerMove{
+	
+    width: 50%;
+    float: left;
+}
+.result p{
+	
+	color:black;margin-top:0;
+	padding-top:20px;
+	
+}
