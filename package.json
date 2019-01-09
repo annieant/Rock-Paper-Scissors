@@ -9,7 +9,9 @@
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17",
     "styled-components": "^2.4.0",
-    "merge": ">=1.2.1"
+    "merge": ">=1.2.1",
+    "deep-extend": ">=0.5.1",
+    "lodash": ">=4.17.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,6 +27,8 @@
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-react": "^7.5.1",
     "gh-pages": "^1.1.0",
-    "merge": ">=1.2.1"
+    "merge": ">=1.2.1",
+    "deep-extend": ">=0.5.1",
+    "lodash": ">=4.17.5"
   }
 }
